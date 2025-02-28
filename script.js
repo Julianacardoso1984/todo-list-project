@@ -1,6 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-const li = document.createElement("li");
+
 
 function addTask() {
     const task = inputBox.value.trim();
@@ -8,7 +8,7 @@ function addTask() {
       alert("Please write down a task");
       return;
     }
-  
+    const li = document.createElement("li");
     li.innerHTML = `
       <label>
         <input type="checkbox">
